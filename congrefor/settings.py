@@ -23,14 +23,25 @@ ADMINS = [
 
 MANAGERS = ADMINS
 
+#DATABASES = {
+#    "default": {
+#        "ENGINE": "django.db.backends.sqlite3", # Add "postgresql_psycopg2", ”postgresql", #"mysql", "sqlite3" or "oracle".
+#        "NAME": os.path.join(PROJECT_ROOT, 'dev.db'),                       # Or path to database #file if using sqlite3.
+#        "USER": "",                             # Not used with sqlite3.
+#        "PASSWORD": "",                         # Not used with sqlite3.
+#        "HOST": "",                             # Set to empty string for localhost. Not used with #sqlite3.
+#        "PORT": "",                             # Set to empty string for default. Not used with #sqlite3.
+#    }
+#}
+
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3", # Add "postgresql_psycopg2", "postgresql", "mysql", "sqlite3" or "oracle".
-        "NAME": "dev.db",                       # Or path to database file if using sqlite3.
-        "USER": "",                             # Not used with sqlite3.
-        "PASSWORD": "",                         # Not used with sqlite3.
-        "HOST": "",                             # Set to empty string for localhost. Not used with sqlite3.
-        "PORT": "",                             # Set to empty string for default. Not used with sqlite3.
+        "ENGINE": "django.db.backends.postgresql_psycopg2", # Add "postgresql_psycopg2", ”postgresql", "mysql", "sqlite3" or "oracle".
+#        "NAME": os.path.join(PROJECT_ROOT, 'dev.db'),                       # Or path to database file if using sqlite3.
+#        "USER": "",                             # Not used with sqlite3.
+#        "PASSWORD": "",                         # Not used with sqlite3.
+#        "HOST": "",                             # Set to empty string for localhost. Not used with sqlite3.
+ #       "PORT": "",                             # Set to empty string for default. Not used with sqlite3.
     }
 }
 
@@ -211,6 +222,29 @@ PROPOSAL_FORMS = {
     "tutorial": "congrefor.proposals.forms.TutorialProposalForm",
     "talk": "congrefor.proposals.forms.TalkProposalForm",
 }
+
+# Parse database configuration from $DATABASE_URL
+import dj_database_url
+DATABASES = { 'default' : dj_database_url.config()}
+
+#default=os.environ["DATABASE_URL"]
+#postgres://cdtrsjjvtamnhu:HnRKQIOzVgSTInp1Fvzup68Al-@ec2-54-225-101-124.compute-1.amazonaws.com:5432/d804qdkop062ab
+
+# Honor the 'X-Forwarded-Proto' header for request.is_secure()
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+# Allow all host headers
+ALLOWED_HOSTS = ['[your-project-name].herokuapp.com']
+
+# Static asset configuration
+import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = 'staticfiles'
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
 
 # local_settings.py can be used to override environment-specific settings
 # like database and email that differ between development and production.

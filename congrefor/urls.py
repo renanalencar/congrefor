@@ -34,6 +34,8 @@ urlpatterns = patterns("",
     url(r"^markitup/", include("markitup.urls")),
     
     url(r"^", include("symposion.cms.urls")),
+    # serve static
+    url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
 )
 
 
