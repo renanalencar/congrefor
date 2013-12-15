@@ -7,8 +7,8 @@ import posixpath
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 PACKAGE_ROOT = os.path.abspath(os.path.dirname(__file__))
 
-DEBUG = True
-TEMPLATE_DEBUG = DEBUG
+DEBUG = False
+#TEMPLATE_DEBUG = DEBUG
 
 # tells Pinax to serve media through the staticfiles app.
 SERVE_MEDIA = DEBUG
@@ -54,7 +54,7 @@ TIME_ZONE = "America/Recife"
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = "pt-br"
+LANGUAGE_CODE = "pt_br"
 
 SITE_ID = 1
 
@@ -65,7 +65,6 @@ USE_L10N = True
 
 LANGUAGES = (
     ('en', 'English'),
-    ('pt', 'Portuguese'),
     ('pt-br', '')
 )
 
@@ -113,6 +112,7 @@ TEMPLATE_LOADERS = [
 MIDDLEWARE_CLASSES = [
     "django.middleware.common.CommonMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
+#    "django.middleware.locale.LocaleMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
@@ -214,6 +214,7 @@ AUTHENTICATION_BACKENDS = [
 
 LOGIN_URL = "/account/login/"
 
+#EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 EMAIL_CONFIRMATION_DAYS = 2
 EMAIL_DEBUG = DEBUG
 
@@ -245,7 +246,7 @@ DATABASES = { 'default' : dj_database_url.config()}
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Allow all host headers
-ALLOWED_HOSTS = ['[your-project-name].herokuapp.com']
+ALLOWED_HOSTS = ['congrefor.herokuapp.com']
 
 # Static asset configuration
 import os

@@ -22,7 +22,7 @@ urlpatterns = patterns("",
     url(r"^account/signup/$", symposion.views.SignupView.as_view(), name="account_signup"),
     url(r"^account/login/$", symposion.views.LoginView.as_view(), name="account_login"),
     url(r"^account/", include("account.urls")),
-    
+    url(r'^i18n/', include('django.conf.urls.i18n')),
     url(r"^dashboard/", symposion.views.dashboard, name="dashboard"),
     url(r"^speaker/", include("symposion.speakers.urls")),
     url(r"^proposals/", include("symposion.proposals.urls")),
