@@ -64,9 +64,11 @@ SITE_ID = 1
 USE_I18N = True
 USE_L10N = True
 
+from django.utils.translation import ugettext_lazy as _
+
 LANGUAGES = (
-    ('en', 'English'),
-    ('pt-br', '')
+    ('en', _('English')),
+    ('pt-br', _('Portuguese'))
 )
 
 # Absolute path to the directory that holds media.
