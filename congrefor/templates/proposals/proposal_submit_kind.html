@@ -1,0 +1,29 @@
+{% extends "proposals/base.html" %}
+
+{% load bootstrap_tags %}
+{% load boxes_tags %}
+{% load markitup_tags %}
+{% load i18n %}
+
+{% block page_title %}Submit a Proposal for a {{ kind.name }}{% endblock %}
+
+{% block body %}
+    {% box "example_proposal" %}
+
+    <form method="POST" action="" enctype="multipart/form-data" class="form-horizontal">
+        {% csrf_token %}
+        <fieldset>
+            {{ form|as_bootstrap }}
+        </fieldset>
+        <div class="form-actions">
+            <p>
+                {% blocktrans %}
+                Você será capaz de editar a sua proposta depois de ter sido submetida. O comitê do evento pode fazer perguntas, fornecer feedback, e até mesmo sugerir alterações na sua proposta como parte dos processos de revisão.
+                {% endblocktrans %}
+            </p>
+            <input class="btn btn-primary" type="submit" name="finish" value="{% trans 'Salvar' %}" />
+            <!-- <span style="float: right; padding: 4px 6px">or</span> -->
+            <input class="btn" type="submit" name="add-speakers" value="{% trans 'Salvar e Adicionar Palestrantes' %}" />
+        </div>
+    </form>
+{% endblock %}

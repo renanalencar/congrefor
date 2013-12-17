@@ -1,0 +1,30 @@
+{% extends "proposals/base.html" %}
+
+{% load boxes_tags %}
+{% load i18n %}
+
+{% block page_title %}{% trans "Submit A Proposal" %}{% endblock %}
+
+{% block body %}
+    {% box "proposal_submit" %}
+    
+    {% if kinds %}
+        <p>
+            {% blocktrans %}
+                Selecione que tipo de apresentação você gostaria de submeter:
+            {% endblocktrans %}
+        </p>
+    
+        <ul>
+            {% for kind in kinds %}
+                <li><a href="{% url proposal_submit_kind kind.slug %}">{{ kind }}</a></li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>
+            {% blocktrans %}
+            As apresentações não estão abertas para a submissão atualmente .
+            {% endblocktrans %}
+        </p>
+    {% endif %}
+{% endblock %}

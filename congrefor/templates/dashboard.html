@@ -39,7 +39,7 @@
                 	{% endblocktrans %}
                 </p>
             {% else %}
-                <h4>{% trans "Your Proposals" %}</h4>
+                <h4>{% trans "Suas Submissões" %}</h4>
                 {% if user.speaker_profile.proposals.exists %}
                     <table class="table">
                         <tr>
@@ -113,7 +113,7 @@
                 <p>
                     {% url sponsor_apply as sponsor_apply %}
                 	{% blocktrans %}
-                		If you or your organization would be interested in sponsorship opportunities, <a href="{{sponsor_apply}}">use our online form to apply to be a sponsor</a>.
+                		Se você ou sua organização se interessou em oportunidades de patrocínio, <a href="{{sponsor_apply}}">use nosso formulário online para registrar-se como patrocinador</a>.
                 	{% endblocktrans %}
                 </p>
             {% else %}
@@ -132,10 +132,11 @@
             {% endif %}
             {% if user.is_staff %}
                 <p>
-                    {% url sponsor_apply as sponsor_apply %}
+                    {% url sponsor_add as sponsor_add %}
                 	{% blocktrans %}
-                		If you or your organization would be interested in sponsorship opportunities, <a href="{{sponsor_apply}}">use our online form to apply to be a sponsor</a>.
-                	{% endblocktrans %}
+                    	Como funcionário, você pode diretamente <a href="{{sponsor_add}}">adicionar um patrocinador</a> se a sua organização não está
+                    	ela mesma cadastrada.
+                    {% endblocktrans %}
                 </p>
             {% endif %}
         </div>
@@ -213,7 +214,7 @@
             
             <div class="dashboard-panel-content">
                 {% if user.memberships.exists %}
-                    <h4>{% trans "Your Teams" %}</h4>
+                    <h4>{% trans "Seus Times" %}</h4>
                     <table class="table table-striped">
                         {% for membership in user.memberships.all %}
                             <tr>
@@ -234,7 +235,7 @@
                     </table>
                 {% endif %}
                 {% if available_teams %}
-                    <h4>{% trans "Available Teams" %}</h4>
+                    <h4>{% trans "Times Disponíveis" %}</h4>
                     <table class="table table-striped">
                         {% for team in available_teams %}
                             <tr>
