@@ -205,7 +205,7 @@ ACCOUNT_UNIQUE_EMAIL = EMAIL_CONFIRMATION_UNIQUE_EMAIL = False
 ACCOUNT_SIGNUP_REDIRECT_URL = "dashboard"
 ACCOUNT_LOGIN_REDIRECT_URL = "dashboard"
 ACCOUNT_LOGOUT_REDIRECT_URL = "home"
-ACCOUNT_USER_DISPLAY = lambda user: user.email
+ACCOUNT_USER_DISPLAY = lambda user: "%s %s" %(user.first_name,user.last_name)
 
 AUTHENTICATION_BACKENDS = [
     # Permissions Backends

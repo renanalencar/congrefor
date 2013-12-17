@@ -95,6 +95,22 @@
         </div>
     </div>
     
+    {% if not request.user.is_staff %}
+    <div class="dashboard-panel">
+            <div class="dashboard-panel-header">
+                <i class="icon-user"></i>
+                <h3>{% trans "Inscrição" %}</h3>
+                <div class="pull-right header-actions">
+                    
+                </div>
+            </div>
+            
+            <div class="dashboard-panel-content">
+                
+            </div>
+        </div>
+        {% endif %}
+    {% if request.user.is_staff %}
     <div class="dashboard-panel">
         <div class="dashboard-panel-header">
             <i class="icon-briefcase"></i>
@@ -141,7 +157,7 @@
             {% endif %}
         </div>
     </div>
-        
+    {% endif %}    
     {% if review_sections %}
         <div class="dashboard-panel">
             <div class="dashboard-panel-header">
