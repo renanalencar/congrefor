@@ -218,6 +218,17 @@ AUTHENTICATION_BACKENDS = [
 LOGIN_URL = "/account/login/"
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+#EMAIL_USE_TLS = True 
+#EMAIL_HOST = 'smtp.gmail.com' 
+#EMAIL_PORT = 587 
+#EMAIL_HOST_USER = 'rakil@gmail.com' 
+#EMAIL_HOST_PASSWORD = '*******' 
+#DEFAULT_FROM_EMAIL = 'testing@testing.com
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'app20277221@heroku.com'
+EMAIL_HOST_PASSWORD = 'uq8ywe0y'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 EMAIL_CONFIRMATION_DAYS = 2
 EMAIL_DEBUG = DEBUG
 
