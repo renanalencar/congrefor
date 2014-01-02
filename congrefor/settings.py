@@ -217,7 +217,7 @@ AUTHENTICATION_BACKENDS = [
 
 LOGIN_URL = "/account/login/"
 
-#EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 EMAIL_CONFIRMATION_DAYS = 2
 EMAIL_DEBUG = DEBUG
 
