@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-15 19:57-0300\n"
+"POT-Creation-Date: 2014-01-14 02:49-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,23 +28,256 @@ msgstr ""
 msgid "Portuguese"
 msgstr ""
 
+#: congrefor/proposals/models.py:26
+msgid ""
+"Ao enviar sua proposta, você concorda em dar permissão para os organizadores "
+"do congresso para gravar, editar e lançar áudio e/ou vídeo de sua "
+"apresentação. Se você não concorda com isso, por favor, desmarque esta caixa."
+msgstr ""
+
 #: congrefor/templates/_account_bar.html:14
-msgid "Dashboard"
-msgstr "Painel"
+msgid "Painel"
+msgstr ""
 
 #: congrefor/templates/_account_bar.html:15
-#: venv/lib/python2.7/site-packages/debug_toolbar/panels/settings_vars.py:16
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/_account_bar.html:14
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/base.html:11
-msgid "Settings"
-msgstr "Configurações"
+#: congrefor/templates/account/base.html:11
+msgid "Configurações"
+msgstr ""
 
 #: congrefor/templates/_account_bar.html:17
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/_account_bar.html:16
-msgid "Admin"
-msgstr "Administração"
+msgid "Administração"
+msgstr ""
 
 #: congrefor/templates/_account_bar.html:21
+msgid "Sair"
+msgstr ""
+
+#: congrefor/templates/_account_bar.html:26
+#: congrefor/templates/account/login.html:21
+msgid "Entrar"
+msgstr ""
+
+#: congrefor/templates/_account_bar.html:27
+#: congrefor/templates/_account_bar.html:29
+msgid "Cadastrar-se"
+msgstr ""
+
+#: congrefor/templates/_default_sidebar.html:8
+msgid "Apoio"
+msgstr ""
+
+#: congrefor/templates/dashboard.html:16
+msgid "Apresentações"
+msgstr ""
+
+#: congrefor/templates/dashboard.html:20
+msgid "Criar um perfil de palestrante"
+msgstr ""
+
+#: congrefor/templates/dashboard.html:24
+msgid "Editar seu perfil de palestrante"
+msgstr ""
+
+#: congrefor/templates/dashboard.html:27
+msgid "Enviar uma nova submissão"
+msgstr ""
+
+#: congrefor/templates/dashboard.html:37
+#, python-format
+msgid ""
+"\n"
+"                \t\tPara enviar uma submissão, você deve primeiro <a href="
+"\"%(speaker_create)s\">criar um perfil de palestrante</a>.\n"
+"                \t"
+msgstr ""
+
+#: congrefor/templates/dashboard.html:42
+msgid "Suas Submissões"
+msgstr ""
+
+#: congrefor/templates/dashboard.html:46 congrefor/templates/dashboard.html:68
+#: congrefor/templates/dashboard.html:84
+msgid "Título"
+msgstr ""
+
+#: congrefor/templates/dashboard.html:47 congrefor/templates/dashboard.html:69
+#: congrefor/templates/dashboard.html:85
+msgid "Tipo de Seção"
+msgstr ""
+
+#: congrefor/templates/dashboard.html:48 congrefor/templates/dashboard.html:70
+#: congrefor/templates/dashboard.html:86
+#: congrefor/templates/reviews/result_notification.html:47
+#: venv/lib/python2.7/site-packages/symposion/templates/reviews/result_notification.html:47
+msgid "Status"
+msgstr ""
+
+#: congrefor/templates/dashboard.html:49 congrefor/templates/dashboard.html:71
+#: congrefor/templates/dashboard.html:87
+msgid "Ações"
+msgstr ""
+
+#: congrefor/templates/dashboard.html:57
+msgid ""
+"\n"
+"                    \t\tNenhuma submissão enviada ainda.\n"
+"                    \t"
+msgstr ""
+
+#: congrefor/templates/dashboard.html:65
+msgid "Submissões que você participou como palestrante adicional"
+msgstr ""
+
+#: congrefor/templates/dashboard.html:102
+msgid "Inscrição"
+msgstr ""
+
+#: congrefor/templates/dashboard.html:117
+msgid "Patrocínio"
+msgstr ""
+
+#: congrefor/templates/dashboard.html:121
+msgid "Inscrever-se para ser um patrocinador"
+msgstr ""
+
+#: congrefor/templates/dashboard.html:131
+#, python-format
+msgid ""
+"\n"
+"                \t\tSe você ou sua organização se interessou em "
+"oportunidades de patrocínio, <a href=\"%(sponsor_apply)s\">use nosso "
+"formulário online para registrar-se como patrocinador</a>.\n"
+"                \t"
+msgstr ""
+
+#: congrefor/templates/dashboard.html:136
+msgid "Seu Patrocínio"
+msgstr ""
+
+#: congrefor/templates/dashboard.html:152
+#, python-format
+msgid ""
+"\n"
+"                    \tComo funcionário, você pode diretamente <a href="
+"\"%(sponsor_add)s\">adicionar um patrocinador</a> se a sua organização não "
+"está\n"
+"                    \tela mesma cadastrada.\n"
+"                    "
+msgstr ""
+
+#: congrefor/templates/dashboard.html:165
+msgid "Revisões"
+msgstr ""
+
+#: congrefor/templates/dashboard.html:169
+msgid "Seções para Revisão"
+msgstr ""
+
+#: congrefor/templates/dashboard.html:177
+msgid "Submissões que você revisou"
+msgstr ""
+
+#: congrefor/templates/dashboard.html:181
+msgid "Palestrante / Título"
+msgstr ""
+
+#: congrefor/templates/dashboard.html:182
+msgid "Seu Voto"
+msgstr ""
+
+#: congrefor/templates/dashboard.html:229
+msgid "Times"
+msgstr ""
+
+#: congrefor/templates/dashboard.html:234
+msgid "Seus Times"
+msgstr ""
+
+#: congrefor/templates/dashboard.html:255
+msgid "Times Disponíveis"
+msgstr ""
+
+#: congrefor/templates/homepage.html:6
+msgid "Bem-vindo"
+msgstr ""
+
+#: congrefor/templates/account/base.html:10
+#: congrefor/templates/account/settings.html:7
+#: congrefor/templates/account/settings.html:11
+msgid "Conta"
+msgstr ""
+
+#: congrefor/templates/account/base.html:12
+msgid "Alterar senha"
+msgstr ""
+
+#: congrefor/templates/account/base.html:13
+msgid "Apagar conta"
+msgstr ""
+
+#: congrefor/templates/account/email_confirm.html:6
+#: congrefor/templates/account/email_confirm.html:12
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/email_confirm.html:6
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/email_confirm.html:12
+msgid "Confirm Email"
+msgstr ""
+
+#: congrefor/templates/account/email_confirm.html:15
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/email_confirm.html:15
+#, python-format
+msgid "Confirm email address <b>%(email)s</b>?"
+msgstr ""
+
+#: congrefor/templates/account/email_confirm.html:17
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/email_confirm.html:17
+msgid "Confirm"
+msgstr ""
+
+#: congrefor/templates/account/email_confirmation_sent.html:6
+#: congrefor/templates/account/email_confirmation_sent.html:9
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/email_confirmation_sent.html:6
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/email_confirmation_sent.html:9
+msgid "Confirm your email address"
+msgstr ""
+
+#: congrefor/templates/account/email_confirmation_sent.html:11
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/email_confirmation_sent.html:11
+#, python-format
+msgid ""
+"We have sent you an email to <b>%(email)s</b> for verification. Follow the "
+"link provided to finalize the signup process. If you do not receive it "
+"within a few minutes, contact us at <a href=\"mailto:%(THEME_CONTACT_EMAIL)s"
+"\">%(THEME_CONTACT_EMAIL)s</a>."
+msgstr ""
+
+#: congrefor/templates/account/email_confirmed.html:6
+#: congrefor/templates/account/email_confirmed.html:9
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/email_confirmed.html:6
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/email_confirmed.html:9
+msgid "Email confirmed"
+msgstr ""
+
+#: congrefor/templates/account/email_confirmed.html:10
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/email_confirmed.html:10
+#, python-format
+msgid "You have confirmed <b>%(email)s</b>"
+msgstr ""
+
+#: congrefor/templates/account/login.html:7
+msgid "Entrada"
+msgstr ""
+
+#: congrefor/templates/account/login.html:13
+msgid "Entrar com uma conta existente"
+msgstr ""
+
+#: congrefor/templates/account/login.html:20
+msgid "Esqueceu a senha?"
+msgstr ""
+
+#: congrefor/templates/account/logout.html:6
+#: congrefor/templates/account/logout.html:12
+#: congrefor/templates/account/logout.html:17
 #: venv/lib/python2.7/site-packages/django/contrib/admin/templates/admin/base.html:36
 #: venv/lib/python2.7/site-packages/django/contrib/admin/templates/registration/password_change_done.html:4
 #: venv/lib/python2.7/site-packages/django/contrib/admin/templates/registration/password_change_form.html:5
@@ -53,32 +286,188 @@ msgstr "Administração"
 #: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/logout.html:12
 #: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/logout.html:17
 msgid "Log out"
-msgstr "Sair"
+msgstr ""
 
-#: congrefor/templates/_account_bar.html:26
-#: venv/lib/python2.7/site-packages/django/contrib/admin/sites.py:315
-#: venv/lib/python2.7/site-packages/django/contrib/admin/tests.py:61
-#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/admin/login.html:49
-#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/registration/password_reset_complete.html:20
-#: venv/lib/python2.7/site-packages/django/contrib/admin/views/decorators.py:23
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/_account_bar.html:25
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/login.html:7
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/login.html:21
-msgid "Log in"
-msgstr "Entrar"
+#: congrefor/templates/account/logout.html:15
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/logout.html:15
+msgid "Are you sure you want to log out?"
+msgstr ""
 
-#: congrefor/templates/_account_bar.html:27
-#: congrefor/templates/_account_bar.html:29
+#: congrefor/templates/account/password_change.html:7
+#: congrefor/templates/account/password_change.html:11
+#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/admin/base.html:35
+#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/admin/auth/user/change_password.html:19
+#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/admin/auth/user/change_password.html:53
+#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/registration/password_change_done.html:4
+#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/registration/password_change_form.html:5
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/base.html:12
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_change.html:7
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_change.html:11
+msgid "Change password"
+msgstr ""
+
+#: congrefor/templates/account/password_change.html:16
+#: congrefor/templates/account/password_reset_token.html:16
+#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/admin/pagination.html:11
+#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/admin/submit_line.html:3
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_change.html:16
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset_token.html:16
+msgid "Save"
+msgstr ""
+
+#: congrefor/templates/account/password_reset.html:8
+#: congrefor/templates/account/password_reset.html:14
+#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/registration/password_reset_complete.html:8
+#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/registration/password_reset_confirm.html:12
+#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/registration/password_reset_done.html:8
+#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/registration/password_reset_form.html:8
+#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/registration/password_reset_form.html:12
+#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/registration/password_reset_form.html:16
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset.html:8
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset.html:14
+msgid "Password reset"
+msgstr ""
+
+#: congrefor/templates/account/password_reset.html:15
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset.html:15
+msgid ""
+"Forgotten your password? Enter your email address below, and we'll send you "
+"an email allowing you to reset it."
+msgstr ""
+
+#: congrefor/templates/account/password_reset.html:20
+#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/registration/password_reset_form.html:22
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset.html:20
+msgid "Reset my password"
+msgstr ""
+
+#: congrefor/templates/account/password_reset.html:25
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset.html:25
+#, python-format
+msgid ""
+"If you have any trouble resetting your password, contact us at <a href="
+"\"mailto:%(THEME_CONTACT_EMAIL)s\">%(THEME_CONTACT_EMAIL)s</a>."
+msgstr ""
+
+#: congrefor/templates/account/password_reset_sent.html:7
+#: congrefor/templates/account/password_reset_sent.html:10
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset_sent.html:7
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset_sent.html:10
+msgid "Password reset sent"
+msgstr ""
+
+#: congrefor/templates/account/password_reset_sent.html:12
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset_sent.html:12
+#, python-format
+msgid ""
+"We have sent you an email. If you do not receive it within a few minutes, "
+"try resending or contact us at <a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">"
+"%(THEME_CONTACT_EMAIL)s</a>."
+msgstr ""
+
+#: congrefor/templates/account/password_reset_sent.html:18
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset_sent.html:18
+msgid "Resend"
+msgstr ""
+
+#: congrefor/templates/account/password_reset_sent.html:21
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset_sent.html:21
+#, python-format
+msgid ""
+"We have resent the password email. If you do not receive it within a few "
+"minutes, contact us at <a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">"
+"%(THEME_CONTACT_EMAIL)s</a>."
+msgstr ""
+
+#: congrefor/templates/account/password_reset_token.html:7
+#: congrefor/templates/account/password_reset_token.html:11
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset_token.html:7
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset_token.html:11
+msgid "Set your new password"
+msgstr ""
+
+#: congrefor/templates/account/password_reset_token_fail.html:7
+#: congrefor/templates/account/password_reset_token_fail.html:10
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset_token_fail.html:7
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset_token_fail.html:10
+msgid "Bad token"
+msgstr ""
+
+#: congrefor/templates/account/password_reset_token_fail.html:12
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset_token_fail.html:12
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a <a href=\"%(url)s\">new password reset</a>."
+msgstr ""
+
+#: congrefor/templates/account/settings.html:15
+#: congrefor/templates/proposals/proposal_submit_kind.html:24
+#: congrefor/templates/speakers/speaker_create.html:19
+msgid "Salvar"
+msgstr ""
+
+#: congrefor/templates/account/signup.html:7
+#: congrefor/templates/account/signup.html:13
+msgid "Cadastro"
+msgstr ""
+
+#: congrefor/templates/account/signup.html:21
+msgid "Cadastrar"
+msgstr ""
+
+#: congrefor/templates/account/signup_closed.html:7
 #: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/_account_bar.html:27
 #: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/signup.html:7
 #: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/signup.html:13
 #: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/signup.html:21
 #: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/signup_closed.html:7
 msgid "Sign up"
-msgstr "Cadastro"
+msgstr ""
 
-#: congrefor/templates/homepage.html:6
-msgid "Welcome"
+#: congrefor/templates/account/signup_closed.html:10
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/signup_closed.html:10
+msgid "This site is in private beta"
+msgstr ""
+
+#: congrefor/templates/account/signup_closed.html:11
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/signup_closed.html:11
+msgid "If you have signup code you can enter it below."
+msgstr ""
+
+#: congrefor/templates/account/email/email_confirmation_message.txt:1
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/email/email_confirmation_message.txt:1
+#, python-format
+msgid ""
+"A user on %(site_name)s has created an account using this email address.\n"
+"\n"
+"To confirm this email address, go to %(activate_url)s\n"
+"\n"
+"If you did not sign up for this site, you can ignore this message.\n"
+msgstr ""
+
+#: congrefor/templates/account/email/email_confirmation_subject.txt:1
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/email/email_confirmation_subject.txt:1
+#, python-format
+msgid "Confirm email address for %(site_name)s"
+msgstr ""
+
+#: congrefor/templates/account/email/password_reset.txt:1
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/email/password_reset.txt:1
+#, python-format
+msgid ""
+"You're receiving this email because you or someone else has requested a "
+"password for your user account at %(site_name)s.\n"
+"It can be safely ignored if you did not request a password reset. Click the "
+"link below to reset your password.\n"
+"\n"
+"%(password_reset_url)s\n"
+msgstr ""
+
+#: congrefor/templates/account/email/password_reset_subject.txt:1
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/email/password_reset_subject.txt:1
+#, python-format
+msgid "[%(site_name)s] Password reset"
 msgstr ""
 
 #: congrefor/templates/proposals/_pending_proposal_row.html:12
@@ -160,13 +549,22 @@ msgstr ""
 
 #: congrefor/templates/proposals/_proposal_fields.html:37
 #: venv/lib/python2.7/site-packages/symposion/templates/proposals/_proposal_fields.html:37
-#, fuzzy
 msgid "Speaker Bio"
-msgstr "Apresentações"
+msgstr ""
 
 #: congrefor/templates/proposals/_proposal_fields.html:40
 #: venv/lib/python2.7/site-packages/symposion/templates/proposals/_proposal_fields.html:40
 msgid "Documents"
+msgstr ""
+
+#: congrefor/templates/proposals/proposal_cancel.html:7
+#: venv/lib/python2.7/site-packages/symposion/templates/proposals/proposal_cancel.html:7
+msgid "Cancel Proposal"
+msgstr ""
+
+#: congrefor/templates/proposals/proposal_cancel.html:16
+#: venv/lib/python2.7/site-packages/symposion/templates/proposals/proposal_cancel.html:16
+msgid "No, keep it for now"
 msgstr ""
 
 #: congrefor/templates/proposals/proposal_detail.html:14
@@ -238,6 +636,66 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
+#: congrefor/templates/proposals/proposal_speaker_manage.html:7
+#: venv/lib/python2.7/site-packages/symposion/templates/proposals/proposal_speaker_manage.html:7
+msgid "Proposal:"
+msgstr ""
+
+#: congrefor/templates/proposals/proposal_speaker_manage.html:10
+#: venv/lib/python2.7/site-packages/symposion/templates/proposals/proposal_speaker_manage.html:10
+msgid "Edit proposal"
+msgstr ""
+
+#: congrefor/templates/proposals/proposal_speaker_manage.html:14
+#: venv/lib/python2.7/site-packages/symposion/templates/proposals/proposal_speaker_manage.html:14
+msgid "Current Speakers"
+msgstr ""
+
+#: congrefor/templates/proposals/proposal_speaker_manage.html:20
+#: venv/lib/python2.7/site-packages/symposion/templates/proposals/proposal_speaker_manage.html:20
+msgid "pending invitation"
+msgstr ""
+
+#: congrefor/templates/proposals/proposal_speaker_manage.html:24
+#: venv/lib/python2.7/site-packages/symposion/templates/proposals/proposal_speaker_manage.html:24
+msgid "Add another speaker"
+msgstr ""
+
+#: congrefor/templates/proposals/proposal_submit.html:6
+#: venv/lib/python2.7/site-packages/symposion/templates/proposals/proposal_submit.html:6
+msgid "Submit A Proposal"
+msgstr ""
+
+#: congrefor/templates/proposals/proposal_submit.html:13
+msgid ""
+"\n"
+"                Selecione que tipo de apresentação você gostaria de "
+"submeter:\n"
+"            "
+msgstr ""
+
+#: congrefor/templates/proposals/proposal_submit.html:25
+msgid ""
+"\n"
+"            As apresentações não estão abertas para a submissão "
+"atualmente .\n"
+"            "
+msgstr ""
+
+#: congrefor/templates/proposals/proposal_submit_kind.html:20
+msgid ""
+"\n"
+"                Você será capaz de editar a sua proposta depois de ter sido "
+"submetida. O comitê do evento pode fazer perguntas, fornecer feedback, e até "
+"mesmo sugerir alterações na sua proposta como parte dos processos de "
+"revisão.\n"
+"                "
+msgstr ""
+
+#: congrefor/templates/proposals/proposal_submit_kind.html:26
+msgid "Salvar e Adicionar Palestrantes"
+msgstr ""
+
 #: congrefor/templates/reviews/_review_table.html:6
 #: congrefor/templates/reviews/result_notification.html:45
 #: venv/lib/python2.7/site-packages/symposion/templates/reviews/_review_table.html:6
@@ -275,35 +733,28 @@ msgstr ""
 #: congrefor/templates/reviews/_review_table.html:13
 #: venv/lib/python2.7/site-packages/symposion/templates/reviews/_review_table.html:13
 msgid "Your Rating"
-msgstr "Sua Classificação"
+msgstr ""
 
 #: congrefor/templates/reviews/base.html:64
 #: venv/lib/python2.7/site-packages/symposion/templates/reviews/base.html:64
-#, fuzzy
 msgid "All Reviews"
-msgstr "Revisões"
+msgstr ""
 
 #: congrefor/templates/reviews/base.html:77
 #: venv/lib/python2.7/site-packages/symposion/templates/reviews/base.html:77
-#, fuzzy
 msgid "Voting Status"
-msgstr "Status"
-
-#: congrefor/templates/reviews/result_notification.html:47
-#: venv/lib/python2.7/site-packages/symposion/templates/reviews/result_notification.html:47
-msgid "Status"
-msgstr "Status"
+msgstr ""
 
 #: congrefor/templates/reviews/result_notification.html:48
 #: venv/lib/python2.7/site-packages/symposion/templates/reviews/result_notification.html:48
 msgid "Notified?"
-msgstr "Notificado?"
+msgstr ""
 
 #: congrefor/templates/reviews/review_detail.html:75
 #: venv/lib/python2.7/site-packages/symposion/templates/dashboard.html:132
 #: venv/lib/python2.7/site-packages/symposion/templates/reviews/review_detail.html:75
 msgid "Reviews"
-msgstr "Revisões"
+msgstr ""
 
 #: congrefor/templates/reviews/review_detail.html:76
 #: venv/lib/python2.7/site-packages/symposion/templates/reviews/review_detail.html:76
@@ -322,9 +773,8 @@ msgstr ""
 
 #: congrefor/templates/reviews/review_detail.html:108
 #: venv/lib/python2.7/site-packages/symposion/templates/reviews/review_detail.html:108
-#, fuzzy
 msgid "Submit Review"
-msgstr "Revisões"
+msgstr ""
 
 #: congrefor/templates/reviews/review_detail.html:148
 #: venv/lib/python2.7/site-packages/symposion/templates/reviews/review_detail.html:148
@@ -344,6 +794,27 @@ msgid ""
 "use the following form and he or she will be\n"
 "                            notified and given the opportunity to respond.\n"
 "                        "
+msgstr ""
+
+#: congrefor/templates/speakers/speaker_create.html:7
+#: venv/lib/python2.7/site-packages/symposion/templates/speakers/speaker_create.html:7
+#: venv/lib/python2.7/site-packages/symposion/templates/speakers/speaker_create.html:14
+msgid "Create Speaker Profile"
+msgstr ""
+
+#: congrefor/templates/speakers/speaker_create.html:14
+msgid "Criar Perfil de Palestrante"
+msgstr ""
+
+#: congrefor/templates/speakers/speaker_create.html:20
+msgid "Cancelar"
+msgstr ""
+
+#: congrefor/templates/speakers/speaker_edit.html:7
+#: congrefor/templates/speakers/speaker_edit.html:14
+#: venv/lib/python2.7/site-packages/symposion/templates/speakers/speaker_edit.html:7
+#: venv/lib/python2.7/site-packages/symposion/templates/speakers/speaker_edit.html:14
+msgid "Edit Speaker Profile"
 msgstr ""
 
 #: venv/lib/python2.7/site-packages/account/forms.py:19
@@ -392,7 +863,7 @@ msgstr ""
 
 #: venv/lib/python2.7/site-packages/account/forms.py:68
 msgid "Remember Me"
-msgstr "Lembrar-se de mim"
+msgstr ""
 
 #: venv/lib/python2.7/site-packages/account/forms.py:81
 #: venv/lib/python2.7/site-packages/django/contrib/auth/forms.py:147
@@ -408,7 +879,7 @@ msgstr ""
 #: venv/lib/python2.7/site-packages/account/forms.py:177
 #: venv/lib/python2.7/site-packages/symposion/templates/conference/user_list.html:59
 msgid "Email"
-msgstr "E-mail"
+msgstr ""
 
 #: venv/lib/python2.7/site-packages/account/forms.py:107
 msgid "The email address and/or password you specified are not correct."
@@ -438,11 +909,11 @@ msgstr ""
 
 #: venv/lib/python2.7/site-packages/account/forms.py:179
 msgid "Timezone"
-msgstr "Fuso Horário"
+msgstr ""
 
 #: venv/lib/python2.7/site-packages/account/forms.py:185
 msgid "Language"
-msgstr "Idioma"
+msgstr ""
 
 #: venv/lib/python2.7/site-packages/account/models.py:30
 #: venv/lib/python2.7/site-packages/django/contrib/auth/models.py:260
@@ -499,7 +970,7 @@ msgstr ""
 
 #: venv/lib/python2.7/site-packages/account/views.py:623
 msgid "Account settings updated."
-msgstr "Configurações de conta atualizadas."
+msgstr ""
 
 #: venv/lib/python2.7/site-packages/account/views.py:707
 #, python-format
@@ -538,6 +1009,12 @@ msgstr ""
 #: venv/lib/python2.7/site-packages/debug_toolbar/panels/request_vars.py:22
 #: venv/lib/python2.7/site-packages/debug_toolbar/panels/request_vars.py:25
 msgid "Request Vars"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/debug_toolbar/panels/settings_vars.py:16
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/_account_bar.html:14
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/base.html:11
+msgid "Settings"
 msgstr ""
 
 #: venv/lib/python2.7/site-packages/debug_toolbar/panels/settings_vars.py:19
@@ -713,9 +1190,8 @@ msgid "TotTime"
 msgstr ""
 
 #: venv/lib/python2.7/site-packages/debug_toolbar/templates/debug_toolbar/panels/profiling.html:11
-#, fuzzy
 msgid "Count"
-msgstr "Conta"
+msgstr ""
 
 #: venv/lib/python2.7/site-packages/debug_toolbar/templates/debug_toolbar/panels/request_vars.html:3
 msgid "View information"
@@ -773,14 +1249,12 @@ msgid "No POST data"
 msgstr ""
 
 #: venv/lib/python2.7/site-packages/debug_toolbar/templates/debug_toolbar/panels/settings_vars.html:5
-#, fuzzy
 msgid "Setting"
-msgstr "Configurações"
+msgstr ""
 
 #: venv/lib/python2.7/site-packages/debug_toolbar/templates/debug_toolbar/panels/signals.html:5
-#, fuzzy
 msgid "Signal"
-msgstr "Cadastro"
+msgstr ""
 
 #: venv/lib/python2.7/site-packages/debug_toolbar/templates/debug_toolbar/panels/signals.html:6
 msgid "Providing Args"
@@ -802,9 +1276,8 @@ msgid "Query"
 msgstr ""
 
 #: venv/lib/python2.7/site-packages/debug_toolbar/templates/debug_toolbar/panels/sql.html:20
-#, fuzzy
 msgid "Timeline"
-msgstr "Fuso Horário"
+msgstr ""
 
 #: venv/lib/python2.7/site-packages/debug_toolbar/templates/debug_toolbar/panels/sql.html:21
 msgid "Time (ms)"
@@ -1421,6 +1894,17 @@ msgstr ""
 msgid "Change history: %s"
 msgstr ""
 
+#: venv/lib/python2.7/site-packages/django/contrib/admin/sites.py:315
+#: venv/lib/python2.7/site-packages/django/contrib/admin/tests.py:61
+#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/admin/login.html:49
+#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/registration/password_reset_complete.html:20
+#: venv/lib/python2.7/site-packages/django/contrib/admin/views/decorators.py:23
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/_account_bar.html:25
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/login.html:7
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/login.html:21
+msgid "Log in"
+msgstr ""
+
 #: venv/lib/python2.7/site-packages/django/contrib/admin/sites.py:380
 msgid "Site administration"
 msgstr ""
@@ -1491,19 +1975,16 @@ msgid "Home"
 msgstr ""
 
 #: venv/lib/python2.7/site-packages/django/contrib/admin/templates/admin/500.html:8
-#, fuzzy
 msgid "Server error"
-msgstr "Erro do Servidor"
+msgstr ""
 
 #: venv/lib/python2.7/site-packages/django/contrib/admin/templates/admin/500.html:12
-#, fuzzy
 msgid "Server error (500)"
-msgstr "Erro do Servidor"
+msgstr ""
 
 #: venv/lib/python2.7/site-packages/django/contrib/admin/templates/admin/500.html:15
-#, fuzzy
 msgid "Server Error <em>(500)</em>"
-msgstr "Erro do Servidor"
+msgstr ""
 
 #: venv/lib/python2.7/site-packages/django/contrib/admin/templates/admin/500.html:16
 msgid ""
@@ -1556,17 +2037,6 @@ msgstr ""
 #: venv/lib/python2.7/site-packages/django/contrib/admindocs/templates/admin_doc/view_detail.html:8
 #: venv/lib/python2.7/site-packages/django/contrib/admindocs/templates/admin_doc/view_index.html:9
 msgid "Documentation"
-msgstr ""
-
-#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/admin/base.html:35
-#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/admin/auth/user/change_password.html:19
-#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/admin/auth/user/change_password.html:53
-#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/registration/password_change_done.html:4
-#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/registration/password_change_form.html:5
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/base.html:12
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_change.html:7
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_change.html:11
-msgid "Change password"
 msgstr ""
 
 #: venv/lib/python2.7/site-packages/django/contrib/admin/templates/admin/base_site.html:4
@@ -1739,9 +2209,8 @@ msgid "Password:"
 msgstr ""
 
 #: venv/lib/python2.7/site-packages/django/contrib/admin/templates/admin/login.html:45
-#, fuzzy
 msgid "Forgotten your password or username?"
-msgstr "Esqueceu a sua senha?"
+msgstr ""
 
 #: venv/lib/python2.7/site-packages/django/contrib/admin/templates/admin/object_history.html:24
 #: venv/lib/python2.7/site-packages/reversion/templates/reversion/object_history.html:15
@@ -1764,13 +2233,6 @@ msgstr ""
 #: venv/lib/python2.7/site-packages/django/contrib/admin/templates/admin/pagination.html:10
 msgid "Show all"
 msgstr ""
-
-#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/admin/pagination.html:11
-#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/admin/submit_line.html:3
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_change.html:16
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset_token.html:16
-msgid "Save"
-msgstr "Salvar"
 
 #: venv/lib/python2.7/site-packages/django/contrib/admin/templates/admin/search_form.html:7
 msgid "Search"
@@ -1841,9 +2303,8 @@ msgid "Thanks for spending some quality time with the Web site today."
 msgstr ""
 
 #: venv/lib/python2.7/site-packages/django/contrib/admin/templates/registration/logged_out.html:11
-#, fuzzy
 msgid "Log in again"
-msgstr "Entrar"
+msgstr ""
 
 #: venv/lib/python2.7/site-packages/django/contrib/admin/templates/registration/password_change_done.html:8
 #: venv/lib/python2.7/site-packages/django/contrib/admin/templates/registration/password_change_form.html:9
@@ -1879,19 +2340,7 @@ msgstr ""
 
 #: venv/lib/python2.7/site-packages/django/contrib/admin/templates/registration/password_change_form.html:49
 #: venv/lib/python2.7/site-packages/django/contrib/admin/templates/registration/password_reset_confirm.html:27
-#, fuzzy
 msgid "Change my password"
-msgstr "Esqueceu a sua senha?"
-
-#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/registration/password_reset_complete.html:8
-#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/registration/password_reset_confirm.html:12
-#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/registration/password_reset_done.html:8
-#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/registration/password_reset_form.html:8
-#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/registration/password_reset_form.html:12
-#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/registration/password_reset_form.html:16
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset.html:8
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset.html:14
-msgid "Password reset"
 msgstr ""
 
 #: venv/lib/python2.7/site-packages/django/contrib/admin/templates/registration/password_reset_complete.html:12
@@ -1922,9 +2371,8 @@ msgid "New password:"
 msgstr ""
 
 #: venv/lib/python2.7/site-packages/django/contrib/admin/templates/registration/password_reset_confirm.html:26
-#, fuzzy
 msgid "Confirm password:"
-msgstr "Confirmar E-mail"
+msgstr ""
 
 #: venv/lib/python2.7/site-packages/django/contrib/admin/templates/registration/password_reset_confirm.html:32
 msgid "Password reset unsuccessful"
@@ -1980,12 +2428,6 @@ msgstr ""
 #: venv/lib/python2.7/site-packages/django/contrib/admin/templates/registration/password_reset_form.html:22
 msgid "E-mail address:"
 msgstr ""
-
-#: venv/lib/python2.7/site-packages/django/contrib/admin/templates/registration/password_reset_form.html:22
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset.html:20
-#, fuzzy
-msgid "Reset my password"
-msgstr "Esqueceu a sua senha?"
 
 #: venv/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py:336
 msgid "All dates"
@@ -2147,9 +2589,8 @@ msgstr ""
 
 #: venv/lib/python2.7/site-packages/django/contrib/admindocs/templates/admin_doc/view_detail.html:9
 #: venv/lib/python2.7/site-packages/django/contrib/admindocs/templates/admin_doc/view_index.html:10
-#, fuzzy
 msgid "Views"
-msgstr "Revisões"
+msgstr ""
 
 #: venv/lib/python2.7/site-packages/django/contrib/auth/admin.py:41
 msgid "Personal info"
@@ -2649,9 +3090,8 @@ msgstr ""
 
 #: venv/lib/python2.7/site-packages/django/contrib/comments/templates/comments/form.html:18
 #: venv/lib/python2.7/site-packages/django/contrib/comments/templates/comments/preview.html:33
-#, fuzzy
 msgid "Preview"
-msgstr "Revisões"
+msgstr ""
 
 #: venv/lib/python2.7/site-packages/django/contrib/comments/templates/comments/posted.html:4
 msgid "Thanks for commenting"
@@ -7700,11 +8140,11 @@ msgstr ""
 
 #: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/500.html:5
 msgid "Server Error"
-msgstr "Erro do Servidor"
+msgstr ""
 
 #: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/500.html:9
 msgid "Something went wrong"
-msgstr "Alguma coisa deu errado"
+msgstr ""
 
 #: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/500.html:10
 msgid ""
@@ -7712,157 +8152,24 @@ msgid ""
 "look into it as soon as possible."
 msgstr ""
 
+#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/_account_bar.html:16
+msgid "Admin"
+msgstr ""
+
 #: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/base.html:10
 msgid "Account"
-msgstr "Conta"
+msgstr ""
 
 #: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/base.html:13
 msgid "Delete account"
-msgstr "Apagar conta"
-
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/email_confirm.html:6
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/email_confirm.html:12
-msgid "Confirm Email"
-msgstr "Confirmar E-mail"
-
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/email_confirm.html:15
-#, python-format
-msgid "Confirm email address <b>%(email)s</b>?"
-msgstr "Confirmar o endereço de e-mail <b>%(email)s</b>?"
-
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/email_confirm.html:17
-msgid "Confirm"
-msgstr "Confirmar"
-
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/email_confirmation_sent.html:6
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/email_confirmation_sent.html:9
-msgid "Confirm your email address"
-msgstr "Você confirmou o endereço de e-mail"
-
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/email_confirmation_sent.html:11
-#, python-format
-msgid ""
-"We have sent you an email to <b>%(email)s</b> for verification. Follow the "
-"link provided to finalize the signup process. If you do not receive it "
-"within a few minutes, contact us at <a href=\"mailto:%(THEME_CONTACT_EMAIL)s"
-"\">%(THEME_CONTACT_EMAIL)s</a>."
 msgstr ""
-
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/email_confirmed.html:6
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/email_confirmed.html:9
-msgid "Email confirmed"
-msgstr "E-mail confirmado"
-
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/email_confirmed.html:10
-#, python-format
-msgid "You have confirmed <b>%(email)s</b>"
-msgstr "Você confirmou o endereço de e-mail <b>%(email)s</b>"
 
 #: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/login.html:13
 msgid "Log in to an existing account"
-msgstr "Entrar com uma conta existente"
+msgstr ""
 
 #: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/login.html:20
 msgid "Forgot your password?"
-msgstr "Esqueceu a sua senha?"
-
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/logout.html:15
-msgid "Are you sure you want to log out?"
-msgstr ""
-
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset.html:15
-msgid ""
-"Forgotten your password? Enter your email address below, and we'll send you "
-"an email allowing you to reset it."
-msgstr ""
-
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset.html:25
-#, python-format
-msgid ""
-"If you have any trouble resetting your password, contact us at <a href="
-"\"mailto:%(THEME_CONTACT_EMAIL)s\">%(THEME_CONTACT_EMAIL)s</a>."
-msgstr ""
-
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset_sent.html:7
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset_sent.html:10
-msgid "Password reset sent"
-msgstr ""
-
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset_sent.html:12
-#, python-format
-msgid ""
-"We have sent you an email. If you do not receive it within a few minutes, "
-"try resending or contact us at <a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">"
-"%(THEME_CONTACT_EMAIL)s</a>."
-msgstr ""
-
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset_sent.html:18
-msgid "Resend"
-msgstr ""
-
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset_sent.html:21
-#, python-format
-msgid ""
-"We have resent the password email. If you do not receive it within a few "
-"minutes, contact us at <a href=\"mailto:%(THEME_CONTACT_EMAIL)s\">"
-"%(THEME_CONTACT_EMAIL)s</a>."
-msgstr ""
-
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset_token.html:7
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset_token.html:11
-#, fuzzy
-msgid "Set your new password"
-msgstr "Esqueceu a sua senha?"
-
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset_token_fail.html:7
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset_token_fail.html:10
-msgid "Bad token"
-msgstr ""
-
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/password_reset_token_fail.html:12
-#, python-format
-msgid ""
-"The password reset link was invalid, possibly because it has already been "
-"used.  Please request a <a href=\"%(url)s\">new password reset</a>."
-msgstr ""
-
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/signup_closed.html:10
-msgid "This site is in private beta"
-msgstr ""
-
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/signup_closed.html:11
-msgid "If you have signup code you can enter it below."
-msgstr ""
-
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/email/email_confirmation_message.txt:1
-#, python-format
-msgid ""
-"A user on %(site_name)s has created an account using this email address.\n"
-"\n"
-"To confirm this email address, go to %(activate_url)s\n"
-"\n"
-"If you did not sign up for this site, you can ignore this message.\n"
-msgstr ""
-
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/email/email_confirmation_subject.txt:1
-#, fuzzy, python-format
-msgid "Confirm email address for %(site_name)s"
-msgstr "Confirmar o endereço de e-mail <b>%(email)s</b>?"
-
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/email/password_reset.txt:1
-#, python-format
-msgid ""
-"You're receiving this email because you or someone else has requested a "
-"password for your user account at %(site_name)s.\n"
-"It can be safely ignored if you did not request a password reset. Click the "
-"link below to reset your password.\n"
-"\n"
-"%(password_reset_url)s\n"
-msgstr ""
-
-#: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/account/email/password_reset_subject.txt:1
-#, python-format
-msgid "[%(site_name)s] Password reset"
 msgstr ""
 
 #: venv/lib/python2.7/site-packages/pinax_theme_bootstrap/templates/pagination/builtin_pagination.html:10
@@ -8338,12 +8645,12 @@ msgstr ""
 
 #: venv/lib/python2.7/site-packages/symposion/templates/dashboard.html:16
 msgid "Speaking"
-msgstr "Apresentações"
+msgstr ""
 
 #: venv/lib/python2.7/site-packages/symposion/templates/dashboard.html:92
 #: venv/lib/python2.7/site-packages/symposion/templates/sponsorship/detail.html:8
 msgid "Sponsorship"
-msgstr "Patrocínio"
+msgstr ""
 
 #: venv/lib/python2.7/site-packages/symposion/templates/dashboard.html:196
 msgid "Teams"
@@ -8404,50 +8711,8 @@ msgstr ""
 msgid "You have been invited to join \"%(team)s\""
 msgstr ""
 
-#: venv/lib/python2.7/site-packages/symposion/templates/proposals/proposal_cancel.html:7
-msgid "Cancel Proposal"
-msgstr ""
-
-#: venv/lib/python2.7/site-packages/symposion/templates/proposals/proposal_cancel.html:16
-msgid "No, keep it for now"
-msgstr ""
-
-#: venv/lib/python2.7/site-packages/symposion/templates/proposals/proposal_speaker_manage.html:7
-msgid "Proposal:"
-msgstr ""
-
-#: venv/lib/python2.7/site-packages/symposion/templates/proposals/proposal_speaker_manage.html:10
-msgid "Edit proposal"
-msgstr ""
-
-#: venv/lib/python2.7/site-packages/symposion/templates/proposals/proposal_speaker_manage.html:14
-msgid "Current Speakers"
-msgstr ""
-
-#: venv/lib/python2.7/site-packages/symposion/templates/proposals/proposal_speaker_manage.html:20
-msgid "pending invitation"
-msgstr ""
-
-#: venv/lib/python2.7/site-packages/symposion/templates/proposals/proposal_speaker_manage.html:24
-msgid "Add another speaker"
-msgstr ""
-
-#: venv/lib/python2.7/site-packages/symposion/templates/proposals/proposal_submit.html:6
-msgid "Submit A Proposal"
-msgstr ""
-
 #: venv/lib/python2.7/site-packages/symposion/templates/schedule/_slot_edit.html:5
 msgid "Edit Slot"
-msgstr ""
-
-#: venv/lib/python2.7/site-packages/symposion/templates/speakers/speaker_create.html:7
-#: venv/lib/python2.7/site-packages/symposion/templates/speakers/speaker_create.html:14
-msgid "Create Speaker Profile"
-msgstr ""
-
-#: venv/lib/python2.7/site-packages/symposion/templates/speakers/speaker_edit.html:7
-#: venv/lib/python2.7/site-packages/symposion/templates/speakers/speaker_edit.html:14
-msgid "Edit Speaker Profile"
 msgstr ""
 
 #: venv/lib/python2.7/site-packages/symposion/templates/sponsorship/add.html:7
