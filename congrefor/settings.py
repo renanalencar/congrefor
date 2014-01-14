@@ -170,19 +170,21 @@ INSTALLED_APPS = [
     "account",
     
     # symposion
-    "symposion",
+    #"symposion",
     "symposion.sponsorship",
     "symposion.conference",
     "symposion.cms",
     "symposion.boxes",
     "symposion.proposals",
-    "symposion.speakers",
+    #"symposion.speakers",
     "symposion.teams",
     "symposion.reviews",
     "symposion.schedule",
     
     # project
     "congrefor.proposals",
+    "congrefor.account",
+    "congrefor.speakers",
 ]
 
 LOCALE_PATHS = (

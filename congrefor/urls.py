@@ -8,7 +8,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 import symposion.views
-
+import congrefor.account.views
 # from pinax.apps.account.openid_consumer import PinaxConsumer
 
 WIKI_SLUG = r"(([\w-]{2,})(/[\w-]{2,})*)"
@@ -19,8 +19,10 @@ urlpatterns = patterns("",
     }, name="home"),
     url(r"^admin/", include(admin.site.urls)),
     
-    url(r"^account/signup/$", symposion.views.SignupView.as_view(), name="account_signup"),
-    url(r"^account/login/$", symposion.views.LoginView.as_view(), name="account_login"),
+#    url(r"^account/signup/$", symposion.views.SignupView.as_view(), name="account_signup"),
+#    url(r"^account/login/$", symposion.views.LoginView.as_view(), name="account_login"),
+    url(r"^account/signup/$", congrefor.account.views.SignupView.as_view(), name="account_signup"),
+    url(r"^account/login/$", congrefor.account.views.LoginView.as_view(), name="account_login"),
     url(r"^account/", include("account.urls")),
     url(r'^i18n/', include('django.conf.urls.i18n')),
     url(r"^dashboard/", symposion.views.dashboard, name="dashboard"),

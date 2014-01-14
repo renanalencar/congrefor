@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from django import forms
 
 from markitup.widgets import MarkItUpWidget
@@ -11,7 +13,7 @@ class ProposalForm(forms.ModelForm):
         value = self.cleaned_data["description"]
         if len(value) > 400:
             raise forms.ValidationError(
-                u"The description must be less than 400 characters"
+                u"A descrição deve ter menos de 400 caracteres"
             )
         return value
 
@@ -23,7 +25,8 @@ class TalkProposalForm(ProposalForm):
         fields = [
             "title",
             "audience_level",
-            "description",
+            #"topic_area",
+            #"description",
             "abstract",
             "additional_notes",
             "recording_release",
@@ -41,7 +44,8 @@ class TutorialProposalForm(ProposalForm):
         fields = [
             "title",
             "audience_level",
-            "description",
+            #"topic_area",
+            #"description",
             "abstract",
             "additional_notes",
             "recording_release",
