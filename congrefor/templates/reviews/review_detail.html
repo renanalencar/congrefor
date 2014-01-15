@@ -51,12 +51,12 @@
                                     </div>
                                 </div>
                             {% else %}
-                                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">Undecided <span class="caret"></span></a>
+                                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">{% trans 'Não Decidido ' %}<span class="caret"></span></a>
                                 <div class="dropdown-menu pull-right" style="width: 200px; padding-left: 10px;">
                                     <div class="btn-group">
-                                        <input type="submit" name="result_submit" value="accept" class="btn btn-mini btn-success" />
-                                        <input type="submit" name="result_submit" value="reject" class="btn btn-mini btn-danger" />
-                                        <input type="submit" name="result_submit" value="standby" class="btn btn-mini" />
+                                        <input type="submit" name="result_submit" value="{% trans 'accept' %}" class="btn btn-mini btn-success" />
+                                        <input type="submit" name="result_submit" value="{% trans 'reject' %}" class="btn btn-mini btn-danger" />
+                                        <input type="submit" name="result_submit" value="{% trans 'standby' %}" class="btn btn-mini" />
                                     </div>
                                 </div>
                             {% endif %}
