@@ -9,16 +9,16 @@
     
     <td>
         {% if proposal.cancelled %}
-            <span class="label label-important">{% trans 'Cancelled' %}</span>
+            <span class="label label-important">{% trans 'Cancelado' %}</span>
         {% else %}
             {% if request.user == proposal.speaker.user %}
                 {% if proposal.result.status == "accepted" %}
-                    <span class="label label-success">{% trans 'Accepted' %}</span>
+                    <span class="label label-success">{% trans 'Aceito' %}</span>
                 {% else %}
-                    <span class="label">{% trans 'Submitted' %}</span>
+                    <span class="label">{% trans 'Submetido' %}</span>
                 {% endif %}
             {% else %}
-                <span class="label">{% trans 'Invited' %}</span>
+                <span class="label">{% trans 'Convidado' %}</span>
             {% endif %}
         {% endif %}
     </td>
