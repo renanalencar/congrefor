@@ -61,24 +61,24 @@
                         </li>
                         <li>
                             <a href="{% url review_section section.section.slug %}">
-                                {% trans "All Reviews" %}
+                                {% trans "Todas as Revisões" %}
                             </a>
                         </li>
                         {% comment %}
                         <li>
                             <a href="{% url review_section_assignments section.section.slug %}">
-                                {% trans "Your Assignments" %}
+                                {% trans "Suas Designações" %}
                             </a>
                         </li>
                         {% endcomment %}
                         <li>
                             <a href="{% url review_status section.section.slug %}">
-                                {% trans "Voting Status" %}
+                                {% trans "Status da Votação" %}
                             </a>
                         </li>
                         {% if request.user.is_staff %}
                             <li>
-                                <a href="{% url result_notification section.section.slug 'accepted' %}">Result Notification</a>
+                                <a href="{% url result_notification section.section.slug 'accepted' %}">{% trans 'Comunicação de Resultado' %}</a>
                             </li>
                         {% endif %}
                     {% endfor %}
