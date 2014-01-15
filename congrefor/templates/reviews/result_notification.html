@@ -25,12 +25,13 @@
         {% csrf_token %}
         
         <p>
-            {% transblock %}
-                Selecione uma ou mais submissões (<span class="action-counter">0</span> selecionada(s) atualmente)
+            {% blocktrans %}
+                Selecione uma ou mais submissões (<span class="action-counter">0</span> selecionada(s) atualmente)" %}
             <br/>
             então escolha um modelo de e-mail
+            {% endblocktrans %}
             <select name="notification_template">
-                <option value="">[vazio]</option>
+                <option value="">{% trans "[vazio]" %}</option>
                 {% for template in notification_templates %}
                     <option value="{{ template.pk }}">{{ template.label }}</option>
                 {% endfor %}
