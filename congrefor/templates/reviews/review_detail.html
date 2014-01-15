@@ -73,7 +73,7 @@
         <ul class="nav nav-tabs">
             <li class="active"><a href="#proposal-detail" data-toggle="tab">{% trans "Detalhes da Submissão" %}</a></li>
             <li><a href="#proposal-reviews" data-toggle="tab">{% trans "Revisões" %} <span class="badge">{{ reviews|length }}</span></a></li>
-            <li><a href="#proposal-feedback" data-toggle="tab">{% trans "Feedback do Palestrante" %} <span class="badge">{{ proposal.messages.all|length }}</span></a></li>
+            <li><a href="#proposal-feedback" data-toggle="tab">{% trans "Comentários do Palestrante" %} <span class="badge">{{ proposal.messages.all|length }}</span></a></li>
         </ul>
         <div class="tab-content">
             <div class="tab-pane active" id="proposal-detail">
@@ -106,7 +106,11 @@
                 {% if review_form %}
                     <form method="POST" action="" class="review-form">
                         <legend>{% trans "Submeter Revisão" %}</legend>
-                        <p>Enter your vote and any comment to go along with it. You can revise your vote or comment multiple times with an existing vote (your previously recorded score will be replaced during calculations). <b>Your vote and comments are not public and will only be viewable by other reviewers.</b></p>
+                        <p>
+                            {% blocktrans %}
+                            Enter your vote and any comment to go along with it. You can revise your vote or comment multiple times with an existing vote (your previously recorded score will be replaced during calculations). <b>Your vote and comments are not public and will only be viewable by other reviewers.</b>
+                            {% endblocktrans %}
+                        </p>
                         {% csrf_token %}
                             {{ review_form|as_bootstrap }}
                             <div class="form-action">
