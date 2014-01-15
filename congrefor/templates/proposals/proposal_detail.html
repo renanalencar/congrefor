@@ -11,14 +11,14 @@
         {% if not proposal.cancelled %}
             {% if request.user == proposal.speaker.user %}
                 <a href="{% url proposal_edit proposal.pk %}" class="btn">
-                    {% trans "Edit this proposal" %}
+                    {% trans "Editar esta submissão" %}
                 </a>
                 <a href="{% url proposal_cancel proposal.pk %}" class="btn">
-                    {% trans "Cancel this proposal" %}
+                    {% trans "Cancelar esta submissão" %}
                 </a>
             {% else %}
                 <a href="{% url proposal_leave proposal.pk %}" class="btn">
-                    {% trans "Remove me from this proposal" %}
+                    {% trans "Remover-me desta submissão" %}
                 </a>
             {% endif %}
         {% else %}
@@ -30,12 +30,12 @@
     
     <div class="tabbable">
         <ul class="nav nav-tabs">
-            <li class="active"><a href="#proposal-detail" data-toggle="tab">{% trans "Proposal Details" %}</a></li>
+            <li class="active"><a href="#proposal-detail" data-toggle="tab">{% trans "Detalhes da Submissão" %}</a></li>
             {% if request.user == proposal.speaker.user %}
-                <li><a href="#proposal-documents" data-toggle="tab">{% trans "Supporting Documents" %}</a></li>
+                <li><a href="#proposal-documents" data-toggle="tab">{% trans "Documentos de Apoio" %}</a></li>
             {% endif %}
             {% if message_form %}
-                <li><a href="#proposal-feedback" data-toggle="tab">{% trans "Reviewer Feedback" %} <span class="badge">{{ proposal.messages.all|length }}</span></a></li>
+                <li><a href="#proposal-feedback" data-toggle="tab">{% trans "Feedback do Revisor" %} <span class="badge">{{ proposal.messages.all|length }}</span></a></li>
             {% endif %}
         </ul>
         <div class="tab-content">
@@ -44,7 +44,7 @@
             </div>
             {% if request.user == proposal.speaker.user %}
                 <div class="tab-pane" id="proposal-documents">
-                    <h3>{% trans 'Supporting Documents' %}</h3>
+                    <h3>{% trans 'Documentos de Apoio' %}</h3>
                     
                     {% if proposal.supporting_documents.exists %}
                         <table class="table table-striped">
@@ -54,23 +54,23 @@
                                     <td>
                                     <form style="margin: 0;" method="post" action="{% url proposal_document_delete document.pk %}">
                                         {% csrf_token %}
-                                        <button type="submit" class="btn btn-mini">{% trans 'delete' %}</button>
+                                        <button type="submit" class="btn btn-mini">{% trans 'apagar' %}</button>
                                     </form>
                                 </td>
                                 </tr>
                             {% endfor %}
                         </table>
                     {% else %}
-                        <p>{% trans 'No supporting documents attached to this proposal.' %}</p>
+                        <p>{% trans 'Não há documentos de apoio em anexo à presente submissão.' %}</p>
                     {% endif %}
-                    <a class="btn btn-small{% if proposal.cancelled %} btn-disabled{% endif %}" href="{% url proposal_document_create proposal.pk %}"><i class="icon-upload"></i> {% trans 'Add Document' %}</a>
+                    <a class="btn btn-small{% if proposal.cancelled %} btn-disabled{% endif %}" href="{% url proposal_document_create proposal.pk %}"><i class="icon-upload"></i> {% trans 'Adicionar Documento' %}</a>
                 </div>
             {% endif %}
     
     {% if message_form %}
         <div class="tab-pane" id="proposal-feedback">
             
-            <h3>{% trans 'Conversation with Reviewers' %}</h3>
+            <h3>{% trans 'Diálogo com os Revisores' %}</h3>
             
             {% for message in proposal.messages.all %}
                 <div class="review-box">
@@ -80,9 +80,9 @@
                 <div class="clear"></div>
             {% endfor %}
             
-            <h3>{% trans 'Leave a Message' %}</h3>
+            <h3>{% trans 'Deixar uma Mensagem' %}</h3>
             
-            <p>{% trans 'You can leave a message for the reviewers here.' %}</p>
+            <p>{% trans 'Você pode deixar uma mensagem para os revisores aqui.' %}</p>
             
             <form action="" method="POST" accept-charset="utf-8">
                 {% csrf_token %}
@@ -91,7 +91,7 @@
                 </fieldset>
                 <div class="actions">
                     <button type="submit" name="message_submit" class="btn
-		    primary">{% trans 'Submit' %}</button>
+		    primary">{% trans 'Submeter' %}</button>
                 </div>
             </form>
         </div>
