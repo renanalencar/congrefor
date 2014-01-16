@@ -13,7 +13,7 @@ class SignupForm(account.forms.SignupForm):
     email_confirm = forms.EmailField(label="Confirmar Email")
     
     CATEGORY_LEVELS = [
-        (0, u"-----"),
+        (0, u"Selecionar"),
         (1, u"Estudante/Profissional Não Graduado"),
         (2, u"Estudante de Pós-Graduação"),
         (3, u"Profissional Graduado"),
