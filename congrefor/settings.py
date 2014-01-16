@@ -183,7 +183,7 @@ INSTALLED_APPS = [
     
     # project
     "congrefor.proposals",
-    #"congrefor.account",
+    "congrefor.account",
     "congrefor.speakers",
 ]
 
