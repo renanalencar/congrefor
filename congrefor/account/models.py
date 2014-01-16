@@ -26,13 +26,21 @@
 
 # -*- coding: utf-8 -*-
 
-from django.db import models
+#from django.db import models
 
-from account.models import Account
+#from account.models import Account
 
-from django.utils.translation import ugettext_lazy as _
+#from django.utils.translation import ugettext_lazy as _
 
 
-class Account(Account):
+#class Account(Account):
     
-    payment = models.BooleanField(_("payment"), default=False)
+#    CATEGORY_LEVELS = [
+#        (0, u"-----"),
+#        (1, u"Estudante/Profissional Não Graduado"),
+#        (2, u"Estudante de Pós-Graduação"),
+#        (3, u"Profissional Graduado"),
+#    ]
+    
+#    category_level = models.IntegerField(_(u"Eixo Temático"),choices=CATEGORY_LEVELS)
+#    payment = models.BooleanField(_("payment"), default=False)
