@@ -2,13 +2,6 @@ from django.contrib import admin
 
 from account.models import Account, SignupCode, AccountDeletion
 
-from congrefor.account.models import Account
-
-class AccountAdmin(admin.ModelAdmin):
-    
-    list_display = ["username", "payment", "created"]
-    search_fields = ["username", "email"]
-    list_filter = ["created"]
 
 class SignupCodeAdmin(admin.ModelAdmin):
     
