@@ -281,3 +281,4 @@ if not DEBUG:
  #STATIC_URL = 'https://s3.amazonaws.com/congrefor/static/'
  #ADMIN_MEDIA_PREFIX = 'https://s3.amazonaws.com/congrefor/static/admin/'
  MEDIA_URL = 'https://s3.amazonaws.com/congrefor/media/'
+ MEDIA_ROOT=''
