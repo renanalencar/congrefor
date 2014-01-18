@@ -252,14 +252,14 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 ALLOWED_HOSTS = ['congrefor.herokuapp.com','www.congrefor.univasf.edu.br','congrefor.univasf.edu.br']
 
 # Static asset configuration
-import os
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = 'staticfiles'
-STATIC_URL = '/static/'
+#import os
+#BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+#STATIC_ROOT = 'staticfiles'
+#STATIC_URL = '/static/'
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
+#STATICFILES_DIRS = (
+#    os.path.join(BASE_DIR, 'static'),
+#)
 
 # local_settings.py can be used to override environment-specific settings
 # like database and email that differ between development and production.
