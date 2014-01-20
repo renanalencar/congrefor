@@ -35,3 +35,6 @@ class Payment(models.Model):
     email = models.OneToOneField(EmailAddress, null=True, blank=True, verbose_name='Usuário')
     class Meta:
          verbose_name = u"Pagamento"
+    
+    def __unicode__(self):
+        return unicode(self.email)
