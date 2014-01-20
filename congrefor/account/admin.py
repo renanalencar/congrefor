@@ -9,6 +9,7 @@ class PaymentAdmin(admin.ModelAdmin):
     fields = ('date', 'time', 'note', 'confirmation', 'email')
     list_display = ('email', 'date', 'time', 'confirmation')
     #search_fields = ('email',)
+    list_filter = ["date", "confirmation"]
     
     #def queryset(self, request):
     #    qs = super(PaymentAdmin, self).queryset(request)
