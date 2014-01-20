@@ -270,8 +270,8 @@ if not DEBUG:
  STATICFILES_STORAGE = 'congrefor.s3utils.StaticRootS3BotoStorage'
  DEFAULT_FILE_STORAGE = 'congrefor.s3utils.MediaRootS3BotoStorage'
  S3_URL = 'http://%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
- STATIC_DIRECTORY = '/static/'
- MEDIA_DIRECTORY = '/media/'
+ STATIC_DIRECTORY = 'static/'
+ MEDIA_DIRECTORY = 'media/'
  STATIC_URL = S3_URL + STATIC_DIRECTORY
  MEDIA_URL = S3_URL + MEDIA_DIRECTORY
  ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
