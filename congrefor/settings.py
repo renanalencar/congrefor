@@ -267,8 +267,8 @@ if not DEBUG:
  # necessary to fix manage.py collectstatic command to only upload changed files instead of all files.
  #AWS_PRELOAD_METADATA = True
  AWS_QUERYSTRING_AUTH = False
- STATICFILES_STORAGE = 's3utils.MediaRootS3BotoStorage'
- DEFAULT_FILE_STORAGE = 's3utils.StaticRootS3BotoStorage'
+ STATICFILES_STORAGE = 'congrefor.s3utils.MediaRootS3BotoStorage'
+ DEFAULT_FILE_STORAGE = 'congrefor.s3utils.StaticRootS3BotoStorage'
  S3_URL = 'http://%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
  STATIC_DIRECTORY = '/static/'
  MEDIA_DIRECTORY = '/media/'
