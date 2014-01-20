@@ -29,7 +29,7 @@ class Payment(models.Model):
     
     date = models.DateField(_(u"Data"))
     time = models.TimeField(_(u"Hora"))
-    note = models.TextField(_(u"Observação"))
+    note = models.TextField(_(u"Observação"), blank=True)
     confirmation = models.BooleanField(_(u"Pagamento"), default=False, help_text=_(u"Clique aqui para confirmar o pagamento da inscrição."))
     #user = models.OneToOneField(User, null=True, blank=True, verbose_name='Usuário')
     email = models.OneToOneField(EmailAddress, null=True, blank=True, verbose_name='Usuário')
