@@ -1,15 +1,21 @@
 from django.contrib import admin
 
-from account.models import Account, SignupCode, AccountDeletion
+from .models import Payment
+        
+#admin.site.register(Payment)
 
-
-class SignupCodeAdmin(admin.ModelAdmin):
+class PaymentAdmin(admin.ModelAdmin):
     
-    list_display = ["code", "max_uses", "use_count", "expiry", "created"]
-    search_fields = ["code", "email"]
-    list_filter = ["created"]
+    fields = ('date', 'time', 'note', 'confirmation', 'email')
+    list_display = ('email', 'date', 'time', 'confirmation')
+    #search_fields = ('email',)
+    
+    #def queryset(self, request):
+    #    qs = super(PaymentAdmin, self).queryset(request)
+    #    return qs.filter(user=request.user)
+    
+    #def save_model(self, request, obj, form, change):
+    #    obj.user = request.user
+    #    obj.save()
 
-
-admin.site.register(Account)
-admin.site.register(SignupCode, SignupCodeAdmin)
-admin.site.register(AccountDeletion, list_display=["email", "date_requested", "date_expunged"])
+admin.site.register(Payment, PaymentAdmin)

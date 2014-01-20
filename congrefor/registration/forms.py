@@ -4,9 +4,6 @@ from django import forms
 from django.utils.translation import ugettext_lazy as _
 
 import account.forms
-from account.conf import settings
-
-from account.models import Account
 
 
 class SignupForm(account.forms.SignupForm):
@@ -64,12 +61,3 @@ class LoginEmailForm(LoginForm):
     def __init__(self, *args, **kwargs):
         super(LoginEmailForm, self).__init__(*args, **kwargs)
         self.fields.keyOrder = ["email", "password", "remember"]
-
-
-class SettingsForm(account.forms.SettingsForm):
-    
-    def __init__(self, *args, **kwargs):
-        super(SettingsForm, self).__init__(*args, **kwargs)
-        self.fields["email"].label = u"E-mail"
-        self.fields["timezone"].label = u"Fuso Horário"
-        self.fields["email"].label = u"Idioma"

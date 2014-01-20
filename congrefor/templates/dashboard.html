@@ -106,7 +106,18 @@
             </div>
             
             <div class="dashboard-panel-content">
-                
+                {% for item in lista_itens %}
+                <ul>
+                    <li>
+                    <!--<a href="/remove/{{item.id}}">remover</a>-->
+                    <!--<a href="/item/{{item.id}}">-->
+                    {{ item.date|date:"d/m/Y" }} - {{ item.note }}
+                    </a>
+                    </li>
+                    {% empty %}
+                    <li>{% trans "Inscrição não confirmada." %}</li>
+                    {% endfor %}
+                </ul>
             </div>
         </div>
         {% endif %}
