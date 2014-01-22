@@ -9,23 +9,27 @@ from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 
 import account.views
+import symposion.views
 
 import congrefor.account.forms
 
 
-class SignupView(account.views.SignupView):
+class SignupView(symposion.views.SignupView):
     
-    form_class = congrefor.account.forms.SignupForm
+    class Meta:
+        form_class = congrefor.account.forms.SignupForm
 
 
-class LoginView(account.views.LoginView):
+class LoginView(symposion.views.LoginView):
 
-    form_class = congrefor.account.forms.LoginEmailForm
+    class Meta:
+        form_class = congrefor.account.forms.LoginEmailForm
 
 
 class SettingsView(account.views.SettingsView):
     
-    form_class = congrefor.account.forms.SettingsForm
+    class Meta:
+        form_class = congrefor.account.forms.SettingsForm
 
 @login_required
 def lista(request):

@@ -252,6 +252,8 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # Allow all host headers
 ALLOWED_HOSTS = ['congrefor.herokuapp.com','www.congrefor.univasf.edu.br','congrefor.univasf.edu.br']
 
+USE_X_ACCEL_REDIRECT = False
+
 # local_settings.py can be used to override environment-specific settings
 # like database and email that differ between development and production.
 try:
